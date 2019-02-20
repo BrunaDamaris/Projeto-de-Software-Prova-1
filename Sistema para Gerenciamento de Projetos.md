@@ -1,6 +1,7 @@
 #Sistema para Gerenciamento de Projetos
 
 -Funcionalidades: 
+
 	- O sistema tem como objetivo adicionar, organizar e editar diversos tipos de projetos.
 	- Permite a consulta do total de projetos, de usuários e de atividades no sistema.
 	- Métodos:
@@ -27,8 +28,7 @@
 		- remover(ArrayList<Projetos>, int indicedeprojetos)(Projetos): Remove Projetos do sistema.
 
 -Classes:
-	- 
-	1 - SistemaPrincipal:
+1 - SistemaPrincipal:
 
 		- Motivação: Principais funcionalidades de adição e edição dos projetos.
 
@@ -38,7 +38,7 @@
                                   
 		- Desvantagens:	Essa classe em especifico terá um método bastante extenso.
 
-	2 - Projetos:
+2 - Projetos:
 
 		- Motivação: Classe com as principais funcionalidades dos Projetos que serão gerenciados.
 
@@ -46,7 +46,7 @@
 
 		- Vantagens: Organização, já que somente a acessando podem-se fazer as associações.
 
-	3 - Atividades:
+3 - Atividades:
 
 		- Motivação: Classe com as principais funcionalidades das Atividades que serão gerenciadas.
 
@@ -55,6 +55,7 @@
 		- Vantagens: Organização, já que somente a acessando podem-se fazer as associações.
 
 -Distribuição de Métodos:
+
 	- EditarStatus(Status/Interface): Está presente nas classes que implementam a interface.
 
 	- associarProjetos: Presente na classe Usarios já que a mesma irá fazer as alterações de usuarios.
@@ -86,6 +87,7 @@
 		- Desvantagens: Algumas classes podem até ficar muito extensas.
 
 -Herança:
+
 	Subclasses:
 	- Alunos: Particularmente será necessário informar o tipo do aluno para o associar ao projeto, então foi criada essa classe para esse atributo diferencial.
 
@@ -117,6 +119,7 @@
 		- Desvantagens: Se considerarmos que um dia o usuário quisesse instaciar um Usuario, isso não seria possivel.
 
 -Interface:
+
 	- Implementada na subclasse Professor e na subclasse Pesquisadores.
 
 		- Motivação: A interface será necessária para a aplicar a possibilidade de modificação de status de um projeto somente para classes implementadas.
